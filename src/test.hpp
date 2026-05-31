@@ -1,0 +1,21 @@
+#pragma once 
+
+#include "godot_cpp/classes/node.hpp"
+#include "godot_cpp/classes/wrapped.hpp"
+#include "godot_cpp/variant/string.hpp"
+
+
+class Test : public godot::Node {
+    //class, inherited class 
+    GDCLASS(Test, Node)
+protected: 
+    static void _bind_methods();
+private:
+    String my_data = "Subscribe me";
+
+    String get_my_data() const; 
+
+    void set_my_data(const String &new_data);
+    void say_hello();
+    // code 
+};
