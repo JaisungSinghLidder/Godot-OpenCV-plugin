@@ -11,11 +11,11 @@ class Test : public godot::Node {
 protected: 
     static void _bind_methods();
 private:
-    String my_data = "Subscribe me";
+    godot::String my_data = "Subscribe me";
 
-    String get_my_data() const; 
+    godot::String get_my_data() const; 
 
-    void set_my_data(const String &new_data);
+    void set_my_data(const godot::String &new_data);
     void say_hello();
     // code 
 };
