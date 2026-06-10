@@ -1,7 +1,7 @@
 CompileFlags:
-  Add: 
-    -Wno-unknown-warning-option
-    -IC:/Users/jaisu/Downloads/vcpkg/installed/x64-windows/include
-  Remove: 
+  Add:
+    - -IC:/Users/jaisu/Downloads/opencv/build/include
+    - -Wno-unknown-warning-option
+  Remove:
     - -m*
     - -f*
