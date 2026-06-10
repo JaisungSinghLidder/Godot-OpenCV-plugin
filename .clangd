@@ -1,3 +1,7 @@
 CompileFlags:
-  Add: -Wno-unknown-warning-option
-  Remove: [-m*, -f*]
+  Add: 
+    -Wno-unknown-warning-option
+    -IC:/Users/jaisu/Downloads/vcpkg/installed/x64-windows/include
+  Remove: 
+    - -m*
+    - -f*
