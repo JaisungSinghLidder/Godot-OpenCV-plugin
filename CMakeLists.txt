@@ -15,6 +15,8 @@ set(GODOT_CPP_PATH "${CMAKE_SOURCE_DIR}/godot-cpp")
 add_subdirectory(${GODOT_CPP_PATH} godot-cpp-build)
 
 set(OpenCV_STATIC ON)
+
+set(OpenCV_DIR "C:\\Users\\jaisu\\Downloads\\opencv\\build")
 find_package(OpenCV REQUIRED)
 
 file(GLOB_RECURSE MY_SOURCES CONFIGURE_DEPENDS
